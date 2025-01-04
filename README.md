@@ -1,6 +1,6 @@
 # Task Web App Focused on Procrastination
 
-## Project Description
+## Additional Project Description
 
 This project is a task management web application designed to help users overcome procrastination and improve productivity. The app includes various features to manage tasks, track progress, and encourage focused work sessions.
 
@@ -78,17 +78,15 @@ We welcome contributions to improve this project. Please follow these guidelines
 5. **Create a pull request**
    Open a pull request on GitHub and describe the changes you have made.
 
-## Code of Conduct
+### Code of Conduct
 
 We are committed to fostering an open and welcoming environment. Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a positive experience for all contributors.
 
-# Task Web App Focused on Procrastination
-
-## Project Description
+### Additional Project Information
 
 This project is a task management web application designed to help users overcome procrastination and improve productivity. The app includes various features to manage tasks, track progress, and encourage focused work sessions.
 
-### Key Features
+### Keys Features
 
 - **Task Management and Tracking**
   - User-friendly interface for adding, editing, and deleting tasks
@@ -111,7 +109,7 @@ This project is a task management web application designed to help users overcom
   - Shared calendar view for team members to see upcoming tasks and deadlines
   - Feature for sharing task progress and achievements on social media platforms
 
-## Development Environment Setup
+### Development Environment Setups
 
 To set up the development environment and run the app, follow these steps:
 
@@ -137,7 +135,7 @@ To set up the development environment and run the app, follow these steps:
 4. **Open the app in your browser**
    Open your browser and navigate to `http://localhost:3000`
 
-## Contributing Guidelines
+### Contributings Guidelines
 
 We welcome contributions to improve this project. Please follow these guidelines when contributing:
 
@@ -162,6 +160,6 @@ We welcome contributions to improve this project. Please follow these guidelines
 5. **Create a pull request**
    Open a pull request on GitHub and describe the changes you have made.
 
-## Code of Conduct
+### Code of Conducts
 
 We are committed to fostering an open and welcoming environment. Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a positive experience for all contributors.
