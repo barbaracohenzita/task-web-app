@@ -1,2 +1,1 @@
-# task-web-app
-A task web app focused on reducing procrastination
+This repository is empty. Any task executed on it should be considered a new capability and needs to be created.
