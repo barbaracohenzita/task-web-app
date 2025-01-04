@@ -31,9 +31,79 @@
                 <input type="text" id="task-project" placeholder="Project Name">
                 <button type="submit">Add Task</button>
             </form>
-            <ul class="task-list">
-                <!-- ...existing code... -->
-            </ul>
+            <div class="task-list">
+                <ul id="tasks">
+                    <!-- Tasks will be dynamically added here -->
+                </ul>
+            </div>
         </section>
 
         <!-- Progress Tracking Section -->
+        <footer>
+            <p>&copy; 2023 Task Web App</p>
+        </footer>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const taskCategory = document.getElementById('task-category');
+            const taskDeadline = document.getElementById('task-deadline');
+            const taskProject = document.getElementById('task-project');
+            const taskForm = document.getElementById('task-form');
+            const tasksList = document.getElementById('tasks');
+            let editMode = false;
+            let currentEditItem = null;
+
+            const toggleFields = () => {
+                const category = taskCategory.value;
+                taskDeadline.style.display = category === 'deadline' ? 'block' : 'none';
+                taskProject.style.display = category === 'project' ? 'block' : 'none';
+            };
+
+            taskCategory.addEventListener('change', toggleFields);
+            toggleFields();
+
+            taskForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const taskInput = document.getElementById('task-input').value;
+                const deadline = taskDeadline.value;
+                const project = taskProject.value;
+
+                if (editMode && currentEditItem) {
+                    currentEditItem.firstChild.textContent = `${taskInput} ${deadline ? `- Due: ${deadline}` : ''} ${project ? `- Project: ${project}` : ''}`;
+                    editMode = false;
+                    currentEditItem = null;
+                } else {
+                    const li = document.createElement('li');
+                    li.textContent = `${taskInput} ${deadline ? `- Due: ${deadline}` : ''} ${project ? `- Project: ${project}` : ''}`;
+
+                    // Add delete button
+                    const deleteBtn = document.createElement('button');
+                    deleteBtn.textContent = 'Delete';
+                    deleteBtn.addEventListener('click', () => {
+                        tasksList.removeChild(li);
+                    });
+                    li.appendChild(deleteBtn);
+
+                    // Add edit button
+                    const editBtn = document.createElement('button');
+                    editBtn.textContent = 'Edit';
+                    editBtn.addEventListener('click', () => {
+                        document.getElementById('task-input').value = taskInput;
+                        taskCategory.value = category;
+                        toggleFields();
+                        if (deadline) taskDeadline.value = deadline;
+                        if (project) taskProject.value = project;
+                        editMode = true;
+                        currentEditItem = li;
+                    });
+                    li.appendChild(editBtn);
+
+                    tasksList.appendChild(li);
+                }
+                taskForm.reset();
+                toggleFields();
+            });
+        });
+    </script>
+</body>
+</html>

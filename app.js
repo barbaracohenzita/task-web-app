@@ -38,6 +38,23 @@ document.addEventListener('DOMContentLoaded', function() {
         taskProject.value = '';
     });
 
+    document.getElementById('task-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const taskInput = document.getElementById('task-input').value;
+        const taskCategory = document.getElementById('task-category').value;
+        const taskDeadline = document.getElementById('task-deadline').value;
+        const taskProject = document.getElementById('task-project').value;
+
+        // Create a new task element
+        const li = document.createElement('li');
+        li.textContent = `${taskInput} - ${taskCategory} - ${taskDeadline || 'No deadline'} - ${taskProject || 'No project'}`;
+        
+        document.getElementById('tasks').appendChild(li);
+
+        // Clear the form
+        event.target.reset();
+    });
+
     function addTask(name, category, deadline, project) {
         const task = {
             id: Date.now(),
