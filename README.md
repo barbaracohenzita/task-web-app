@@ -81,6 +81,7 @@ We welcome contributions to improve this project. Please follow these guidelines
 ## Code of Conduct
 
 We are committed to fostering an open and welcoming environment. Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a positive experience for all contributors.
+
 # Task Web App Focused on Procrastination
 
 ## Project Description
@@ -115,17 +116,20 @@ This project is a task management web application designed to help users overcom
 To set up the development environment and run the app, follow these steps:
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/githubnext/workspace-blank.git
    cd workspace-blank
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Run the app**
+
    ```bash
    npm start
    ```
@@ -141,6 +145,7 @@ We welcome contributions to improve this project. Please follow these guidelines
    Create a fork of the repository on GitHub.
 
 2. **Create a new branch**
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
@@ -149,6 +154,7 @@ We welcome contributions to improve this project. Please follow these guidelines
    Implement your changes and commit them with descriptive messages.
 
 4. **Push your changes**
+
    ```bash
    git push origin feature/your-feature-name
    ```
