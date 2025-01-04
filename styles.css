@@ -1,0 +1,133 @@
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Main content area styles */
+main {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Task list styles */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Task categories styles */
+.task-category {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.task-category.priority {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.task-category.deadline {
+    background-color: #ffcc00;
+    color: white;
+}
+
+.task-category.project {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Progress tracking styles */
+.progress-tracking {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 1rem;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 0.5rem;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0;
+    transition: width 0.3s;
+}
+
+.progress-percentage {
+    font-size: 0.875rem;
+}
+
+/* Pomodoro timer styles */
+.pomodoro-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pomodoro-timer button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pomodoro-timer button:hover {
+    background-color: #45a049;
+}
+
+.pomodoro-timer .countdown {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+/* Reminders and notifications styles */
+.reminder {
+    background-color: #ffcc00;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
