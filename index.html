@@ -17,10 +17,23 @@
         <h1>Task Web App</h1>
     </header>
     <main>
-        <!-- Main content will go here -->
-    </main>
-    <footer>
-        <p>&copy; 2023 Task Web App. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <!-- Task Management Section -->
+        <section class="task-management">
+            <h2>Tasks</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="New Task" required>
+                <select id="task-category">
+                    <option value="priority">Priority</option>
+                    <option value="deadline">Deadline</option>
+                    <option value="project">Project</option>
+                </select>
+                <input type="date" id="task-deadline">
+                <input type="text" id="task-project" placeholder="Project Name">
+                <button type="submit">Add Task</button>
+            </form>
+            <ul class="task-list">
+                <!-- ...existing code... -->
+            </ul>
+        </section>
+
+        <!-- Progress Tracking Section -->
